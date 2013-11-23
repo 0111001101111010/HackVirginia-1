@@ -103,7 +103,36 @@ button{
 	text-align:center;
 }
 
+.result{
+	background-color:rgba(255,255,255,0.8);
+	box-shadow: 0px 0px 20px #888888;
+	z-index:99;
+	position:absolute;
+	top:150px;
+	right:0px;
+	min-width:50px;
+	min-height:50px;
+	line-height:0px;
+	padding:10px;
+	text-align:center;
+}
+
 h1 {
+	font-family:'Sue Ellen Francisco', cursive;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:40px;
+}
+
+h2{
+	font-family:'Sue Ellen Francisco', cursive;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:20px;
+}
+
+
+.roadName{
 	font-family:'Sue Ellen Francisco', cursive;
 	text-transform:uppercase;
 	letter-spacing:2px;

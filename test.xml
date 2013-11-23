@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://earth.google.com/kml/2.2'>
+	<Document>
+		<name>Untitled layer</name>
+		<Placemark>
+			<styleUrl>#line-3F5BA9-4</styleUrl>
+			<name>Hampton Blvd</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.3029670715332,36.89643942606587,0.0 -76.3040828704834,36.89135984618853,0.0 -76.30322456359863,36.88971234228124,0.0 -76.3026237487793,36.88792750625768,0.0 -76.30176544189453,36.87357865470466,0.0 -76.30082130432129,36.86932153907276,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#line-4186F0-4</styleUrl>
+			<name>43rd St.</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.3126015663147,36.88305331840381,0.0 -76.29485607147217,36.883654027379684,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#line-F4B400-4</styleUrl>
+			<name>Colley Ave.</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.29773139953613,36.896233503726414,0.0 -76.2960147857666,36.89458610500936,0.0 -76.29532814025879,36.89122255555432,0.0 -76.29481315612793,36.88422040579984,0.0 -76.29472732543945,36.87694298147222,0.0 -76.29498481750488,36.87508918709447,0.0 -76.2960147857666,36.87131280010997,0.0 -76.29764556884766,36.868428887966026,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#line-DB4436-4</styleUrl>
+			<name>38th St.</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.31240844726562,36.879414637317126,0.0 -76.29910469055176,36.87975791652459,0.0 -76.29395484924316,36.88016984953669,0.0 -76.28236770629883,36.88071909009633,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#line-009D57-4</styleUrl>
+			<name>49th St.</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.31275177001953,36.88737831754768,0.0 -76.3026237487793,36.88792750625768,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#line-F8971B-4</styleUrl>
+			<name>Powhatan Ave.</name>
+			<LineString>
+				<tessellate>0</tessellate>
+				<coordinates>-76.31275177001953,36.88737831754768,0.0 -76.31258010864252,36.88334509192519,0.0 -76.31232261657715,36.87917434095377,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Style id='line-009D57-4'>
+			<LineStyle>
+				<color>ff579D00</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+		<Style id='line-F8971B-4'>
+			<LineStyle>
+				<color>ff1B97F8</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+		<Style id='line-4186F0-4'>
+			<LineStyle>
+				<color>ffF08641</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+		<Style id='line-F4B400-4'>
+			<LineStyle>
+				<color>ff00B4F4</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+		<Style id='line-3F5BA9-4'>
+			<LineStyle>
+				<color>ffA95B3F</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+		<Style id='line-DB4436-4'>
+			<LineStyle>
+				<color>ff3644DB</color>
+				<width>10</width>
+			</LineStyle>
+		</Style>
+	</Document>
+</kml>

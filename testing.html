@@ -1,0 +1,49 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    function shuffle(array) {
+        var m = array.length, t, i;
+
+        // While there remain elements to shuffle…
+        while (m) {
+
+          // Pick a remaining element…
+          i = Math.floor(Math.random() * m--);
+
+          // And swap it with the current element.
+          t = array[m];
+          array[m] = array[i];
+          array[i] = t;
+        }
+
+        return array;
+      }
+
+    $(document).ready(function () {
+        var names = new Array();
+        var played, answer=0;
+        var testing = $.ajax({
+            type: "GET",
+            url: "test.xml",
+            cache: false,
+            dataType: "xml",
+            success: function(xml) {
+                $(xml).find('Placemark').each(function(){
+                    $(this).find("name").each(function(){
+                        var name = $(this).text();
+                        //alert(name);
+                        names.push(name);
+                        console.log(name);
+                    });
+                });
+
+            played = Array.apply(null, new Array(names.length)).map(Number.prototype.valueOf,0);    
+
+            var randomnames = shuffle(names);
+            for (var i = 0; i <= names.length; i++)
+            console.log(randomnames[i]);       
+            //console.log(testing);
+            }
+        });
+    });
+</script>

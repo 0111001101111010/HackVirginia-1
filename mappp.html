@@ -12,6 +12,8 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8vCHXfH5Cy-NkKdsqWqFWWGLdFBLfVok&sensor=true">
     </script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     <script type="text/javascript"
       src="js/stopwatch.js">
     </script>
@@ -57,6 +59,7 @@
           panControlOptions: false
         };
 
+
         // Create a new StyledMapType object, passing it the array of styles,
         // as well as the name to be displayed on the map type control.
         var styledMap = new google.maps.StyledMapType(styles,
@@ -71,22 +74,69 @@
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
 
+        var answerArray = ["Powhatan Ave.", "43rd St.", "Hampton Blvd", "49th St.", "38th St.", "Colley Ave."]
+
         var ctaLayer = new google.maps.KmlLayer({
             url: 'https://raw.github.com/cosmicmeow/HackVirginia/master/data/odumap.kml',
-            preserveViewport: true
+            preserveViewport: true, 
+            suppressInfoWindows: false,
+            map: map
           });
           ctaLayer.setMap(map);
 
+          
+
+          var finishGame = false;
+
+          $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[0] + "</h1>");
+
+          while(finishGame == false)
+          {
+            console.log("hehe");
+            for (var i=0; i>5; i++)
+              {
+
+                var answer = answerArray[i];
+                google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
+                var text = kmlEvent.featureData.name;
+                
+
+                console.log(text);
+
+                if (answer == text)
+                  //if (answer == text)
+                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[i+1] + "</h1>");
+
+                  else
+                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
+
+                });
+                
+              }
+
+              finishGame = true;
+
+              
+          }
+      
+
 
       }
+
+
+
       google.maps.event.addDomListener(window, 'load', initialize);
+
+
 
     </script>
 
   </head>
 
   <body>
-    <div class="roadname"><h1>E. Little Creek Rd.</h1></div>
+    <div class="roadname"><h1 class="roadName">. . .</h1></div>
+
+    <div class="result"><h2 class="superResult"> 0 </h2></div>
 
     <div class="column">
       <img src="templogo2.png" style="padding:30px 0"><br>
