@@ -56,7 +56,8 @@
           scrollwheel: false,
           streetViewControl: false,
           panControl: false,
-          panControlOptions: false
+          panControlOptions: false,
+          disableDoubleClickZoom: true
         };
 
 
@@ -94,16 +95,15 @@
 
                 console.log(text);
 
-
-
                 if (answer == text)
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">Correct!</h1>");
-                else
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
-                  setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
+                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click+1]+ "</h1>");
+                 else{
 
-                   click++;
+                   $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
+                   setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
+                }
 
+                click++;
 
                 });
                 

@@ -56,7 +56,9 @@
           scrollwheel: false,
           streetViewControl: false,
           panControl: false,
-          panControlOptions: false
+          panControlOptions: false,
+          disableDoubleClickZoom: true
+          
         };
 
 
@@ -83,7 +85,6 @@
             map: map
           });
           ctaLayer.setMap(map);
-<<<<<<< HEAD
           var click = 0;
           //RENDER THE FIRT ONE
                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click]+ "</h1>");
@@ -95,62 +96,21 @@
 
                 console.log(text);
 
-                if (answer == text){
-                  //if (answer == text)
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click+1] + "</h1>");
-                   superResult = superResult + 100;
-                }
-                  else{
-=======
-
-          
-
-          var finishGame = false;
-          var text;
-
-          $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[0] + "</h1>");
-
-          while(finishGame == false)
-          {
-            for (var i=1; i<5; i++)
-              {
-                var answer = answerArray[i];
-
-                google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
-                text = kmlEvent.featureData.name;
-                
-                console.log(text);
-
-
-
                 if (answer == text)
-                 $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click]+ "</h1>");
-                else
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
-                  setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
-                  }
-                   click++;
+                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click+1]+ "</h1>");
+                 else{
 
-<<<<<<< HEAD
-=======
+                   $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
+                   setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
+                }
 
-                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[i] + "</h1>");
+                click++;
 
                 });
                 
               }
 
-              finishGame = true;
-
-              
-          }
       
->>>>>>> 1c4ee18e9afc8db44c40c5e62aee72aced0ad130
-
-                });
-          var finishGame = false;
-
-      }
 
 
 
