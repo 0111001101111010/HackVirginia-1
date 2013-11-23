@@ -53,37 +53,37 @@
 		<Style id='line-009D57-4'>
 			<LineStyle>
 				<color>ff579D00</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 		<Style id='line-F8971B-4'>
 			<LineStyle>
 				<color>ff1B97F8</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 		<Style id='line-4186F0-4'>
 			<LineStyle>
 				<color>ffF08641</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 		<Style id='line-F4B400-4'>
 			<LineStyle>
 				<color>ff00B4F4</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 		<Style id='line-3F5BA9-4'>
 			<LineStyle>
 				<color>ffA95B3F</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 		<Style id='line-DB4436-4'>
 			<LineStyle>
 				<color>ff3644DB</color>
-				<width>4</width>
+				<width>10</width>
 			</LineStyle>
 		</Style>
 	</Document>
