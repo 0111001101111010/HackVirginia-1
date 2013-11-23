@@ -87,28 +87,31 @@
           
 
           var finishGame = false;
+          var text;
 
           $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[0] + "</h1>");
 
           while(finishGame == false)
           {
-            console.log("hehe");
-            for (var i=0; i>5; i++)
+            for (var i=1; i<5; i++)
               {
-
                 var answer = answerArray[i];
-                google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
-                var text = kmlEvent.featureData.name;
-                
 
+                google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
+                text = kmlEvent.featureData.name;
+                
                 console.log(text);
 
-                if (answer == text)
-                  //if (answer == text)
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[i+1] + "</h1>");
 
-                  else
+
+                if (answer == text)
+                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">Correct!</h1>");
+
+                else
                   $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
+
+
+                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[i] + "</h1>");
 
                 });
                 
@@ -139,7 +142,7 @@
     <div class="result"><h2 class="superResult"> 0 </h2></div>
 
     <div class="column">
-      <img src="templogo2.png" style="padding:30px 0"><br>
+      <img src="locologo.png" style="padding:30px 0"><br>
 
 
       <span id="watchdisplay">00:00:00</span><br>
