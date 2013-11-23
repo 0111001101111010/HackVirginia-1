@@ -59,7 +59,43 @@
           panControlOptions: false,
           disableDoubleClickZoom: true
         };
+    function shuffle(array) {
+       var m = array.length, t, i;
 
+       // While there remain elements to shuffle…
+       while (m) {
+
+         // Pick a remaining element…
+         i = Math.floor(Math.random() * m--);
+
+         // And swap it with the current element.
+         t = array[m];
+         array[m] = array[i];
+         array[i] = t;
+       }
+
+       return array;
+         }
+
+
+        var names = new Array();
+        var played, answer;
+        var score = 0;
+        
+        var testing = $.ajax({
+            type: "GET",
+            url: "coloredbigmap.xml",
+            cache: false,
+            dataType: "xml",
+            success: function(xml) {
+                $(xml).find('Placemark').each(function(){
+                    $(this).find("name").each(function(){
+                        var name = $(this).text();
+                        //alert(name);
+                        names.push(name);
+                        console.log(name);
+                    });
+                });
 
         // Create a new StyledMapType object, passing it the array of styles,
         // as well as the name to be displayed on the map type control.
@@ -123,8 +159,6 @@
 
   <body>
     <div class="roadname"><h1 class="roadName">. . .</h1></div>
-
-    <div class="result"><h2 class="superResult"> 0 </h2></div>
 
     <div class="column">
       <img src="locologo.png" style="padding:30px 0"><br>

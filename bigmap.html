@@ -50,7 +50,7 @@
 
         var mapOptions = {
           center: new google.maps.LatLng(36.8835, -76.3002),
-          zoom: 15,
+          zoom: 1,
           draggable: false,
           zoomControl: false,
           scrollwheel: false,
@@ -76,11 +76,14 @@
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
 
-        var answerArray = ["Powhatan Ave.", "43rd St.", "Hampton Blvd", "49th St.", "38th St.", "Colley Ave."]
+
+
+
+        var answerArray = ["Swells Point Rd", "Corprew Ave", "I-264", "Waterside Dr", "Monticello Ave", "Raby Rd", "Tait Terrace", "26th Street", "Diamond Springs Rd", "Village Ave", "35th Street", "Princess Anne Rd", "N Military Highway", "Virginia Beach Blvd", "I-64", "Rush Street", "Robin Hood Road", "Brambleton", "Weslyan Dr", "North Hampton Blvd", "Newtown Rd", "Azalea Garden Rd", "Boush St", "I-264", "Ballentine Blvd", "Popular Hall Drive", "I-264", "Ingleside Rd", "Miller Store Rd", "Cape Henry Ave", "38th Street", "Olney Rd", "Chesapeake Blvd", "Church Street", "St Paul's Blvd", "Baker Rd", "21st Street", "Campostella", "Cromwell Dr", "Lafayette Blvd", "Park Ave", "Tidewater Dirve", "27th Street", "Kempsville Rd", "Llewellyn Ave"];
 
         var ctaLayer = new google.maps.KmlLayer({
-            url: 'https://raw.github.com/cosmicmeow/HackVirginia/master/data/odumap.kml',
-            preserveViewport: true, 
+            url: 'https://raw.github.com/stanzheng/HackVirginia-1/master/coloredbigmap.kml',
+            preserveViewport: false, 
             suppressInfoWindows: false,
             map: map
           });
