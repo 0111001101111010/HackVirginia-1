@@ -78,24 +78,6 @@
          }
 
 
-        var names = new Array();
-        var played, answer;
-        var score = 0;
-        
-        var testing = $.ajax({
-            type: "GET",
-            url: "coloredbigmap.xml",
-            cache: false,
-            dataType: "xml",
-            success: function(xml) {
-                $(xml).find('Placemark').each(function(){
-                    $(this).find("name").each(function(){
-                        var name = $(this).text();
-                        //alert(name);
-                        names.push(name);
-                        console.log(name);
-                    });
-                });
 
         // Create a new StyledMapType object, passing it the array of styles,
         // as well as the name to be displayed on the map type control.
