@@ -3,10 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100%; width: 80%; position:absolute; right:0; top:0;z-index:2;}
-      .column {height:100%; width:20%;box-shadow: 0px 0px 5px #888888;z-index:1;background-color:#eee; text-align:center;padding:20px 0;}
+      
     </style>
 
     <link href="css/style.css" rel="stylesheet">
@@ -14,8 +11,41 @@
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8vCHXfH5Cy-NkKdsqWqFWWGLdFBLfVok&sensor=true">
     </script>
+
+    <script type="text/javascript"
+      src="js/stopwatch.js">
+    </script>
+
+    <!-- Lets load up prefixfree first -->
+    <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
+
     <script type="text/javascript">
       function initialize() {
+
+      // Create an array of styles.
+        var styles = [
+          {
+            featureType: "poi",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "road.local",
+            stylers: [
+              { visibility: "on" }
+            ]
+          },
+          {
+            featureType: "all",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+          
+        ];
+
+
         var mapOptions = {
           center: new google.maps.LatLng(36.9167, -76.2000),
           zoom: 15,
@@ -26,20 +56,53 @@
           panControl: false,
           panControlOptions: false
         };
+
+        // Create a new StyledMapType object, passing it the array of styles,
+        // as well as the name to be displayed on the map type control.
+        var styledMap = new google.maps.StyledMapType(styles,
+          {name: "Styled Map"});
+
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
+
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
       }
       google.maps.event.addDomListener(window, 'load', initialize);
 
-      
-
     </script>
+
   </head>
+
   <body>
-    <div class="roadname"><h1>BLAH BLAH </h1></div>
+    <div class="roadname"><h1>E. Little Creek Rd.</h1></div>
+
     <div class="column">
       <img src="templogo2.png" style="padding-bottom:20px"><br>
-      <a href="#" class="btn">I give up!</a>
+
+
+      <span id="watchdisplay">00:00:00</span><br>
+      <input onclick="w.start()" type="button" value="Start" class="btn" style="background-color:#FFE168">
+      <br><br>
+      <input onclick="w.stop()" type="button" value="I give up!" class="btn">
+      <script>
+            // <![CDATA[
+         function updatedisplay(watch) {
+          document.getElementById('watchdisplay').innerHTML = watch.toString() + "." + parseInt(watch.getElapsed().milliseconds/100);
+      }
+      var w = new Stopwatch(updatedisplay, 50);
+      // ]]&gt;
+
+      </script>
+
+
+
+    </div>
+
+
+
     <div id="map-canvas"/></div>
   </body>
 </html>
