@@ -83,43 +83,31 @@
             map: map
           });
           ctaLayer.setMap(map);
-
-          
-
-          var finishGame = false;
-
-          $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[0] + "</h1>");
-
-          while(finishGame == false)
-          {
-            console.log("hehe");
-            for (var i=0; i>5; i++)
-              {
-
-                var answer = answerArray[i];
+          var click = 0;
+          //RENDER THE FIRT ONE
+               $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click]+ "</h1>");
                 google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
                 var text = kmlEvent.featureData.name;
-                
+          
+
+                var answer = answerArray[click];                
 
                 console.log(text);
 
-                if (answer == text)
+                if (answer == text){
                   //if (answer == text)
-                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[i+1] + "</h1>");
-
-                  else
+                  $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click+1] + "</h1>");
+                   superResult = superResult + 100;
+                }
+                  else{
                   $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
+                  setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
+                  }
+                   click++;
+
 
                 });
-                
-              }
-
-              finishGame = true;
-
-              
-          }
-      
-
+          var finishGame = false;
 
       }
 

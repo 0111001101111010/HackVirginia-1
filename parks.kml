@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Untitled layer</name>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Town Point Park</name>
+			<Point>
+				<coordinates>-76.29461300000003,36.846284,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Bea Arthur Dog Park</name>
+			<Point>
+				<coordinates>-76.29995099999996,36.853427,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Huntersville Park</name>
+			<Point>
+				<coordinates>-76.27289300000001,36.859581,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Botetourt Gardens</name>
+			<Point>
+				<coordinates>-76.29298399999999,36.861109,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Norfolk Botanical Garden</name>
+			<Point>
+				<coordinates>-76.20011499999998,36.901564,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Norfolk Botanical Garden</name>
+			<Point>
+				<coordinates>-76.20011499999998,36.901564,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Bowman's Garden Center</name>
+			<Point>
+				<coordinates>-76.30531500000001,36.838834,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Tanner's Creek Garden Center</name>
+			<Point>
+				<coordinates>-76.281226,36.881059,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Garden Gazebo</name>
+			<Point>
+				<coordinates>-76.29519800000003,36.870374,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Titustown Park</name>
+			<Point>
+				<coordinates>-76.29533600000002,36.91499,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Caton Park</name>
+			<Point>
+				<coordinates>-76.26782500000002,36.907148,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Granby Street Park</name>
+			<Point>
+				<coordinates>-76.278504,36.890096,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Lakewood Park</name>
+			<Point>
+				<coordinates>-76.26637099999999,36.888412,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Shoop Park</name>
+			<Point>
+				<coordinates>-76.26130799999999,36.87142,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Lafayette Park</name>
+			<Point>
+				<coordinates>-76.28200300000003,36.878767,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Myrtle Park</name>
+			<Point>
+				<coordinates>-76.30420400000003,36.897724,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Ghent Dog Park (Barkley Gardens)</name>
+			<Point>
+				<coordinates>-76.29467399999999,36.865197,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Broad Creek Park</name>
+			<Point>
+				<coordinates>-76.24881700000003,36.85461,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Poplar Hall Park</name>
+			<Point>
+				<coordinates>-76.21568300000001,36.843619,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Parliament Park</name>
+			<Point>
+				<coordinates>-76.17366400000003,36.839985,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Kempsville Park</name>
+			<Point>
+				<coordinates>-76.15156300000001,36.815921,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Mount Trashmore Park</name>
+			<Point>
+				<coordinates>-76.123108,36.829136,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Aragona Park</name>
+			<Point>
+				<coordinates>-76.15699799999999,36.857152,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Lake Lawson and Lake Smith Natural Area</name>
+			<Point>
+				<coordinates>-76.16605600000003,36.888896,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Pleasure House Point</name>
+			<Point>
+				<coordinates>-76.099376,36.903412,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-FF8277</styleUrl>
+			<name>Bayville Farms Park</name>
+			<Point>
+				<coordinates>-76.121084,36.899755,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Style id='icon-503-FF8277'>
+			<IconStyle>
+				<color>ff7782FF</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+	</Document>
+</kml>
