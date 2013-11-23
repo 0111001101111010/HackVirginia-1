@@ -47,7 +47,7 @@
 
 
         var mapOptions = {
-          center: new google.maps.LatLng(36.9167, -76.2000),
+          center: new google.maps.LatLng(36.8865, -76.3052),
           zoom: 15,
           draggable: false,
           zoomControl: false,
@@ -65,9 +65,15 @@
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
 
+        var ctaLayer = new google.maps.KmlLayer({
+            url: 'data/odumap.kml'
+          });
+          ctaLayer.setMap(map);
+
         //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
+
 
       }
       google.maps.event.addDomListener(window, 'load', initialize);
