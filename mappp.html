@@ -105,6 +105,7 @@
           var click = 0;
           //RENDER THE FIRT ONE
                $("h1.roadName").replaceWith("<h1 class=\"roadName\">" + answerArray[click]+ "</h1>");
+              
                 google.maps.event.addListener(ctaLayer, 'click', function(kmlEvent) {
                 var text = kmlEvent.featureData.name;
           
@@ -118,7 +119,7 @@
                  else{
 
                    $("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");
-                   setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">NOPE</h1>");},3);  
+                   setTimeout(function(){$("h1.roadName").replaceWith("<h1 class=\"roadName\">"+ answerArray[click] + "</h1>");},3000);  
                 }
 
                 click++;
